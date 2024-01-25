@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        
+        
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
+        <style>
+        
+      
+        
+      
+        .striped{
+            background-color: rgba(204, 204, 204, 0.628);
+        }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <div class="container" >
+                <div class="row">
+                    <div class="col-xxl-12 col-md-12 col-sm-8 name">
+                        <label for="name" class="form-label col">Name <span
+                                style="color: red;">*</span></label><br>
+                    </div>
+                    <div class="col-sm-8 col-xxl-6 col-md-9 inputBox">
+                        <input type="text" class="form-control inputField"
+                            id="name"
+                            placeholder="First name" name="firstName">
+                        <div id="nameIndicate"
+                            class="form-text description">First</div>
+                    </div>
+                    <div class="col-sm-8 col-xxl-6 col-md-9">
+                        <input type="text" class="form-control inputField"
+                            placeholder="Last name" name="lasttName">
+                        <div id="nameIndicate"
+                            class="form-text description">Last</div>
+
+                    </div>
+                    <!-- <div class="w-100"></div> -->
+                    <div class="col-sm-8 col-xxl-12 col-md-12 name">
+                        <label class="form-label" for="email" class>E-mail <span
+                                style="color: red;">*</span></label>
+                    </div>
+                    <div class=" col-sm-8 col-xxl-6 col-md-9">
+                        <input class="form-control-email w-100 inputField"
+                            name="email">
+
+                    </div>
+                    <div class="col-sm-8 col-xxl-12 col-md-9 name">
+                        <label class="form-label" for="rating" class>Your
+                            Experience <span
+                                style="color: red;">*</span></label>
+                    </div>
+                    <div class="col-xxl-12 col-sm-12  starS">
+
+                        <span onclick="checked(1)" class="star ">★</span>
+                        <span onclick="checked(2)" class="star ">★</span>
+                        <span onclick="checked(3)" class="star ">★</span>
+                        <span onclick="checked(4)" class="star ">★</span>
+                        <span onclick="checked(5)" class="star ">★</span>
+                    </div>
+                    <h3 id="output">Rating is: 0/5</h3>
+
+                    <div class="form-text description" id="comment">Overall, How
+                        would
+                        you rate your experience with us? </div>
+                </div>
+    <div class="radioLarge">
+
+                    <div class="col-md-7 name">
+                        How satisfied are you with?<span style="color: red;">*</span>
+                </div>
+                <div class="row ">
+                    <div class="col-md-2">
+
+                    </div>
+                    <div class="col-md-2 radioHead">
+                        Very Unsatisfied
+                    </div>
+                    <div class="col-md-2 radioHead">
+                        Unsatisfied
+                    </div> 
+                    <div class="col-md-2 radioHead">
+                        Neutral
+                    </div> 
+                    <div class="col-md-2 radioHead">
+                        Satisfied
+                    </div> 
+                    <div class="col-md-2 radioHead text-wrap">
+                        Very Satisfied
+                    </div>
+                </div>
+                <div class="row purchaseRow1 purchaseRow striped">
+                    <div class="col-xxl-2 col-lg-2 col-md-2 inputHead">
+                        Purchase
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px;width: 25px;" name="purchase" id="purChase">
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px;width: 25px;" name="purchase" id="purChase">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="purchase" id="purChase">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="purchase" id="purChase">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px;  width: 25px;" name="purchase" id="purChase">
+                    </div>
+                </div>
+                <div class="row purchaseRow ">
+                    <div class="col-xxl-2 col-lg-2 col-md-2 inputHead">
+                        Service
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px;  width: 25px;" name="service" id="service">
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px;  width: 25px;" name="service" id="service">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px;  width: 25px;" name="service" id="service">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px;  width: 25px;" name="service" id="service">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px;  width: 25px;" name="service" id="service">
+                    </div>
+                </div><div class="row purchaseRow striped">
+                    <div class="col-xxl-2  col-lg-2 col-md-2 inputHead">
+                        Overall Company
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div>
+                </div>
+                
+
+                <div>
+
+                    <div class="col-md-6 name">
+                        How likely are you to?<span
+                            style="color: red;">*</span></label>
+                </div>
+                
+                <div class="row">
+                    <div class="col-4">
+
+                    </div>
+                    <div class="col radioHead">
+                        Very Unlikely
+                    </div>
+                    <div class="col radioHead">
+                        Unlikely
+                    </div> <div class="col radioHead">
+                        Neutral
+                    </div> <div class="col radioHead">
+                        Likely
+                    </div> <div class="col radioHead">
+                        Very Likely
+                    </div>
+                </div>
+                <div class="row purchaseRow1 purchaseRow striped">
+                    <div class="col-4 inputHead">
+                        Buy from us again
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div>
+                </div>
+                <div class="row purchaseRow ">
+                    <div class="col-4 inputHead">
+                        Recommend our products to others
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="products" id="products">
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="products" id="products">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="products" id="products">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="products" id="products">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="products" id="products">
+                    </div>
+                </div><div class="row purchaseRow striped">
+                    <div class="col-4 inputHead">
+                        Recommend our company to others
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div>
+                    <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div> <div class="col radioButton">
+                        <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row radioSmall" style="padding:  10px 10px 10px 5px;">
+                    <div class="col-12 name">How satisfied are you with? <span style="color:red;">*</span></div>
+
+                    <div class="col-12 name">Purchase</div>
+                    <div class="col-5">Very Unsatisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="purchase" id="purchase">
+                    </div>
+                    
+                    <div class="col-5">Unsatisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="purchase" id="purchase">
+                    </div>
+                    <div class="col-5">Neutral</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="purchase" id="purchase">
+                    </div>
+                    <div class="col-5">Satisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="purchase" id="purchase">
+                    </div>
+                    <div class="col-5">Very satisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="purchase" id="purchase">
+                    </div>
+                
+               
+                    <div class="col-12 name">Service</div>
+                    <div class="col-5">Very Unsatisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="service" id="service">
+                    </div>
+                    
+                    <div class="col-5">Unsatisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="service" id="service">
+                    </div>
+                    <div class="col-5">Neutral</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="service" id="service">
+                    </div>
+                    <div class="col-5">Satisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="service" id="service">
+                    </div>
+                    <div class="col-5">Very satisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="service" id="service">
+                    </div>
+                 
+                    <div class="col-12 name">Overall Company</div>
+                    <div class="col-5">Very Unsatisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div>
+                    
+                    <div class="col-5">Unsatisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div>
+                    <div class="col-5">Neutral</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div>
+                    <div class="col-5">Satisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div>
+                    <div class="col-5">Very satisfied</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="overall" id="overall">
+                    </div>
+                </div>
+                <div class="row radioSmall" style="padding:  10px 10px 10px 5px;">
+                    <div class="col-12 name">How likely are you to? <span style="color:red;">*</span></div>
+                    <div class="col-12 name">Buy from us again</div>
+                    <div class="col-5">Very Unlikely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div>
+                    
+                    <div class="col-5">Unlikely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div>
+                    <div class="col-5">Neutral</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div>
+                    <div class="col-5">Likely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div>
+                    <div class="col-5">Very Likely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="buy" id="buy">
+                    </div>
+                
+               
+                    <div class="col-12 name">Recommend our product to others</div>
+                    <div class="col-5">Very Unlikely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="product" id="product">
+                    </div>
+                    
+                    <div class="col-5">Unlikely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="sproduct" id="product">
+                    </div>
+                    <div class="col-5">Neutral</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="product" id="product">
+                    </div>
+                    <div class="col-5">likely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="product" id="product">
+                    </div>
+                    <div class="col-5">Very likely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="product" id="sproduct">
+                    </div>
+                 
+                    <div class="col-12 name">Recommend our Company to others</div>
+                    <div class="col-5">Very Unlikely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div>
+                    
+                    <div class="col-5">Unlikely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div>
+                    <div class="col-5">Neutral</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div>
+                    <div class="col-5">likely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div>
+                    <div class="col-5">Very likely</div>
+                    <div class="col-6">
+                            <input type="radio" style="height: 25px; width: 25px;" name="company" id="company">
+                    </div>
+                </div>
+                
+                <div class="col-xxl-12 name" style="margin-top: 1em;">
+    
+                    Additional Comments or Suggestions
+                </div>
+                <div class="col-xxl-12 " >
+    
+                    <textarea class="w-100" style="height: 250px; text-wrap: wrap; align-self: start;" placeholder=""></textarea>
+                </div>
+                <div style="padding: 10px 0 10px 0;">
+                    <button type="submit" class="btn  btn-outline-primary" style="padding: .5em 0 .5em 0; width: 8rem; font-size: 1.3em;">Submit</button>
+                </div>
+            
+                        </div>
+                    </form>
+                </div> 
+                </div>    
+         
+
+                <script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+                    crossorigin="anonymous">
+                </script>
+                <script src="./script.js"></script>
+            </body>
+        </html>

@@ -1,0 +1,119 @@
+.name {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.7em;
+}
+body{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .name {
+    font-size: 2em;
+  }
+  .inputHead {
+  text-wrap: wrap;
+}
+}
+@media only screen and (max-width: 426px) {
+  .name {
+    font-size: 1.3em;
+  }
+}
+
+.inputField {
+  font-size: 1.7em;
+  background-color: rgba(57, 57, 57, 0.614);
+}
+.Head {
+  text-align: center;
+}
+.description {
+  font-size: 1.5em;
+}
+.radioHead {
+  font-size: 1.2em;
+  text-align: center;
+  font-weight: 400;
+}
+.purchaseRow1 {
+  
+  margin-top: 15px;
+}
+.purchaseRow {
+  align-items: center;
+  height: 60px;
+  
+}
+.Container{
+  width: 500px;
+}
+.radioButton {
+  padding: 2px;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inputHead {
+  font-size: 1.2em;
+}
+
+.radioBox{
+  display:flex; flex-direction:row; width: 100%;
+  align-items: center;
+}
+
+@media only screen and ( max-width: 768px){
+  
+  .radioLarge{
+    display: none;
+  }
+}
+@media only screen and ( min-width: 768px){
+  
+  .radioSmall{
+    display: none;
+  }
+}
+
+.star{
+  font-size: 5vw;
+  cursor: pointer;
+}
+.one{
+  color: red;
+}
+
+.two {
+color: rgb(255, 106, 0);
+}
+
+.three {
+color: rgb(251, 255, 120);
+}
+
+.four {
+color: rgb(255, 255, 0);
+}
+
+.five {
+color: rgb(24, 159, 14);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
